@@ -7172,9 +7172,35 @@ a {
   width: 10rem; }
 
 .image-size {
-  max-width: 30%;
+  position: relative;
+  max-width: 40%;
   height: auto;
   margin: 20px; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: black; }
+
+div.portfolio:hover .overlay {
+  opacity: .6; }
+
+div.text {
+  width: 70%;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
 canvas {
   outline: 0;
@@ -7184,7 +7210,7 @@ canvas {
 
 svg {
   position: absolute center;
-  margin-top: 40px;
+  margin-top: 30px;
   max-width: 60%;
   height: auto; }
 
@@ -7195,3 +7221,19 @@ svg {
 .construction {
   position: absolute center;
   margin-top: 40px; }
+
+.id-card {
+  max-width: 50%;
+  margin: auto;
+  padding: 70px; }
+
+.icon-spacing {
+  padding: 10px; }
+
+footer.icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center; }

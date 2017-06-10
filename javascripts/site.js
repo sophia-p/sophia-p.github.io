@@ -2017,7 +2017,8 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 
-// $( "h1" ).click(function() {
-//   $( this ).slideUp();
-// });
-
+// $("div.yipper").hover(function(event){
+// 	event.preventDefault();
+// 	$(this).text("Yipper");
+// })
+;
