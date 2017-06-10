@@ -7209,9 +7209,10 @@ canvas {
   margin-right: auto; }
 
 svg {
-  position: absolute center;
+  position: relative;
   margin-top: 30px;
   max-width: 60%;
+  padding-bottom: 30px;
   height: auto; }
 
 .fa-anchor {
@@ -7230,10 +7231,13 @@ svg {
 .icon-spacing {
   padding: 10px; }
 
-footer.icons {
+.footer-icons {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
-  padding: 1rem;
+  padding: 3rem;
   text-align: center; }
+
+.attributions {
+  margin-bottom: 50px; }
