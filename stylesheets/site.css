@@ -7208,12 +7208,21 @@ canvas {
   margin-left: auto;
   margin-right: auto; }
 
+#svg-div {
+  text-align: center; }
+
 svg {
-  position: relative;
-  margin-top: 30px;
-  max-width: 60%;
+  position: fixed;
+  margin-left: 37%;
+  margin-right: auto;
+  max-height: 250px;
+  height: auto !important;
+  width: auto !important;
   padding-bottom: 30px;
-  height: auto; }
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  z-index: 1; }
 
 .fa-anchor {
   position: absolute;
@@ -7241,3 +7250,25 @@ svg {
 
 .attributions {
   margin-bottom: 50px; }
+
+.parallax#coronado {
+  background-image: url(../images/coronado2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  z-index: -1; }
+
+.parallax#ocean {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 122, 155, 0.6)), to(rgba(201, 213, 232, 0.6))), url(../images/ocean.jpg);
+  background-image: linear-gradient(rgba(102, 122, 155, 0.6), rgba(201, 213, 232, 0.6)), url(../images/ocean.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  z-index: -1; }
+
+.main h1 {
+  text-align: center;
+  padding: 15rem 0;
+  font-size: 4em;
+  color: white;
+  background: rgba(29, 25, 29, 0.37); }

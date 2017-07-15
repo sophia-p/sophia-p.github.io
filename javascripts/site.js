@@ -2017,8 +2017,15 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 
 
-// $("div.yipper").hover(function(event){
-// 	event.preventDefault();
-// 	$(this).text("Yipper");
-// })
-;
+
+var parallax= document.querySelector(".parallax");
+window.addEventListener("scroll", function() {
+    var scrolledHeight= window.pageYOffset,
+    limit= parallax.offsetTop+ parallax.offsetHeight;
+    if(scrolledHeight > parallax.offsetTop && scrolledHeight <= limit) {
+        parallax.style.backgroundPositionY= (scrolledHeight - parallax.offsetTop) /1.5+ "px";
+    } 
+    else {
+        parallax.style.backgroundPositionY= "0";
+    }
+});
