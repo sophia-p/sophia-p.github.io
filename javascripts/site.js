@@ -2029,3 +2029,16 @@ window.addEventListener("scroll", function() {
         parallax.style.backgroundPositionY= "0";
     }
 });
+
+
+var horizParallax= document.querySelector(".horiz-parallax");
+window.addEventListener("scroll", function() {
+    var scrolledHeight= window.pageYOffset,
+    limit= horizParallax.offsetLeft+ horizParallax.offsetWidth;
+    if(scrolledHeight > horizParallax.offsetLeft && scrolledHeight <= limit) {
+        horizParallax.style.backgroundPositionX= (scrolledHeight - horizParallax.offsetLeft)/.95 + "px";
+    } 
+    else {
+        horizParallax.style.backgroundPositionX= "0";
+    }
+});

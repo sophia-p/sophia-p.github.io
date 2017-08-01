@@ -7213,23 +7213,23 @@ canvas {
 
 svg {
   position: fixed;
-  margin-left: 37%;
+  margin-left: 38%;
   margin-right: auto;
-  max-height: 250px;
+  max-height: 300px;
   height: auto !important;
   width: auto !important;
   padding-bottom: 30px;
   text-align: center;
   display: block;
   max-width: 100%;
-  z-index: 1; }
+  z-index: 2; }
 
 .fa-anchor {
   position: absolute;
   margin-top: 0px; }
 
 .construction {
-  position: absolute center;
+  text-align: center;
   margin-top: 40px; }
 
 .id-card {
@@ -7266,9 +7266,30 @@ svg {
   height: 800px;
   z-index: -1; }
 
+#overlay {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  padding-top: 60px;
+  margin-top: 105px;
+  height: 1605px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6f90a2), to(#032436));
+  background-image: linear-gradient(to bottom right, #6f90a2, #032436);
+  opacity: .6; }
+
 .main h1 {
   text-align: center;
   padding: 15rem 0;
   font-size: 4em;
   color: white;
   background: rgba(29, 25, 29, 0.37); }
+
+@media (max-width: 600px) {
+  svg {
+    margin-left: 25%;
+    margin-right: auto; } }
